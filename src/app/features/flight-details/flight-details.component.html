@@ -1,0 +1,82 @@
+<div class="details-card">
+    <div class="details-header">
+        <div>
+            <span class="eyebrow">Selected Flight</span>
+            @if(flight){
+                <h2>{{flight.flightNumber}}</h2>
+                <p>{{flight.callsign}}</p> 
+            }@else {
+                <h2>No Flight Selected</h2>
+                <p>Select a Flight from a map</p>
+            }
+        </div>
+
+        @if(flight){
+             <span class="status" [ngClass]="getStatusClass(flight.status)">
+                {{flight.status}}
+             </span>
+        }
+    </div>
+
+   @if(flight){
+     <div class="route">
+        <div class="airport">
+            <span class="aiport-code">
+                {{flight.origin.code}}
+            </span>
+            <span>{{flight.origin.city}}</span>
+        </div>
+        <div class="route-line">
+        <span>✈</span>
+      </div>
+        <div class="airport destination">
+        <span class="airport-code">
+          {{ flight.destination.code }}
+        </span>
+
+        <span>
+          {{ flight.destination.city }}
+        </span>
+      </div>
+     </div>
+
+    <div class="details-grid">
+        <div class="detail-item">
+            <span>AirCraft</span>
+            <strong>{{flight.aircraftType}}</strong>
+        </div>
+        <div class="detail-item">
+            <span>callsign</span>
+            <strong>{{flight.callsign}}</strong>
+        </div>
+        <div class="detail-item">
+        <span>Origin</span>
+        <strong>{{ flight.origin.name }}</strong>
+      </div>
+      <div class="detail-item">
+        <span>Destination</span>
+        <strong>{{ flight.destination.name }}</strong>
+      </div>
+       <div class="detail-item">
+        <span>Estimated Departure</span>
+        <strong>
+          {{ flight.estimatedDeparture | date:'dd MMM yyyy, HH:mm' }}
+        </strong>
+      </div>
+      <div class="detail-item">
+        <span>Estimated Arrival</span>
+        <strong>
+          {{ flight.estimatedArrival | date:'dd MMM yyyy, HH:mm' }}
+        </strong>
+      </div>
+    </div>
+  }@else{
+     <div class="empty-state">
+      <div class="empty-icon">✈</div>
+      <h3>Select a flight</h3>
+      <p> Click any flight marker on the map to view operational information.
+      </p>
+    </div>
+  }
+
+</div>

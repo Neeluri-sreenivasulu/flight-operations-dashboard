@@ -1,0 +1,273 @@
+<div class="dashboard">
+  <!-- HEADER -->
+
+  <header class="topbar">
+
+    <div class="brand">
+
+      <div class="brand-icon">
+        ✈
+      </div>
+
+      <div>
+        <h1>SKYOPS</h1>
+        <span>Flight Operations Center</span>
+      </div>
+
+    </div>
+
+    <div class="system-status">
+      <span class="status-dot"></span>
+      SYSTEM OPERATIONAL
+    </div>
+
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="content">
+
+    <!-- TITLE -->
+
+    <section class="page-heading">
+
+      <div>
+        <span class="section-label">
+          OPERATIONS CONTROL
+        </span>
+
+        <h2>Flight Tracking Dashboard</h2>
+
+        <p>
+          Monitor active flights and operational
+          status in real time.
+        </p>
+      </div>
+
+      <div class="date-info">
+        <span>LAST UPDATED</span>
+        <strong>Today, 14:30 UTC</strong>
+      </div>
+
+    </section>
+
+
+    <!-- KPI CARDS -->
+
+    <section class="kpi-grid">
+
+      <div class="kpi-card">
+
+        <div class="kpi-icon blue">
+          ✈
+        </div>
+
+        <div>
+          <span>Total Flights</span>
+          <strong>{{ totalFlights }}</strong>
+        </div>
+
+      </div>
+
+
+      <div class="kpi-card">
+
+        <div class="kpi-icon green">
+          ●
+        </div>
+
+        <div>
+          <span>Active Flights</span>
+          <strong>{{ activeFlights }}</strong>
+        </div>
+
+      </div>
+
+
+      <div class="kpi-card">
+
+        <div class="kpi-icon red">
+          !
+        </div>
+
+        <div>
+          <span>Delayed Flights</span>
+          <strong>{{ delayedFlights }}</strong>
+        </div>
+
+      </div>
+
+
+      <div class="kpi-card">
+
+        <div class="kpi-icon purple">
+          ✓
+        </div>
+
+        <div>
+          <span>Arrived Flights</span>
+          <strong>{{ arrivedFlights }}</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FILTERS -->
+
+    <section class="filters-card">
+
+      <div class="filter-title">
+
+        <div>
+          <strong>Flight Search</strong>
+          <span>
+            {{ filteredFlights.length }}
+            matching flights
+          </span>
+        </div>
+
+        <button
+          type="button"
+          class="reset-button"
+          (click)="resetFilters()">
+          Reset Filters
+        </button>
+
+      </div>
+
+
+      <form
+        [formGroup]="filterForm"
+        class="filters">
+
+        <div class="filter-field search-field">
+
+          <label>Search Callsign</label>
+
+          <div class="input-wrapper">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              formControlName="search"
+              placeholder="Search flight or callsign..."
+            />
+
+          </div>
+
+        </div>
+
+
+        <div class="filter-field">
+
+          <label>Status</label>
+
+          <select formControlName="status">
+
+            @for (status of statuses; track status) {
+              <option [value]="status">
+                {{ status }}
+              </option>
+            }
+
+          </select>
+
+        </div>
+
+
+        <div class="filter-field">
+
+          <label>Origin</label>
+
+          <select formControlName="origin">
+
+            <option value="All">
+              All Airports
+            </option>
+
+            @for (origin of origins; track origin) {
+              <option [value]="origin">
+                {{ origin }}
+              </option>
+            }
+
+          </select>
+
+        </div>
+
+
+        <div class="filter-field">
+
+          <label>Destination</label>
+
+          <select formControlName="destination">
+
+            <option value="All">
+              All Airports
+            </option>
+
+            @for (
+              destination of destinations;
+              track destination
+            ) {
+              <option [value]="destination">
+                {{ destination }}
+              </option>
+            }
+
+          </select>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+    <!-- MAP + DETAILS -->
+
+    <section class="operations-grid">
+
+      <div class="map-container">
+
+        <app-flight-map
+          [flights]="filteredFlights"
+          [selectedFlight]="selectedFlight"
+          (flightSelected)="selectFlight($event)">
+        </app-flight-map>
+
+      </div>
+
+
+      <div class="details-container">
+
+        <app-flight-details
+          [flight]="selectedFlight">
+        </app-flight-details>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <span>
+        SKYOPS Flight Operations Dashboard
+      </span>
+
+      <span>
+        Angular • TypeScript • Leaflet
+      </span>
+
+    </footer>
+
+  </main>
+
+</div>

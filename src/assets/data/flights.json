@@ -1,0 +1,582 @@
+[
+  {
+    "id": 1,
+    "flightNumber": "AI101",
+    "callsign": "AIC101",
+    "aircraftType": "Boeing 787",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "lat": 51.4700,
+      "lng": -0.4543
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T08:30:00",
+    "estimatedArrival": "2026-10-06T14:20:00",
+    "currentPosition": {
+      "lat": 40.7128,
+      "lng": 25.0000
+    }
+  },
+  {
+    "id": 2,
+    "flightNumber": "6E204",
+    "callsign": "IGO204",
+    "aircraftType": "Airbus A320",
+    "origin": {
+      "code": "HYD",
+      "name": "Rajiv Gandhi International Airport",
+      "city": "Hyderabad",
+      "country": "India",
+      "lat": 17.2403,
+      "lng": 78.4294
+    },
+    "destination": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE",
+      "lat": 25.2532,
+      "lng": 55.3657
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T09:10:00",
+    "estimatedArrival": "2026-10-06T11:30:00",
+    "currentPosition": {
+      "lat": 21.5000,
+      "lng": 68.0000
+    }
+  },
+  {
+    "id": 3,
+    "flightNumber": "EK502",
+    "callsign": "UAE502",
+    "aircraftType": "Airbus A380",
+    "origin": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE",
+      "lat": 25.2532,
+      "lng": 55.3657
+    },
+    "destination": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "India",
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "status": "Delayed",
+    "estimatedDeparture": "2026-10-06T10:15:00",
+    "estimatedArrival": "2026-10-06T14:00:00",
+    "currentPosition": {
+      "lat": 23.5000,
+      "lng": 63.5000
+    }
+  },
+  {
+    "id": 4,
+    "flightNumber": "QR571",
+    "callsign": "QTR571",
+    "aircraftType": "Boeing 777",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "DOH",
+      "name": "Hamad International Airport",
+      "city": "Doha",
+      "country": "Qatar",
+      "lat": 25.2731,
+      "lng": 51.6081
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T07:45:00",
+    "estimatedArrival": "2026-10-06T10:20:00",
+    "currentPosition": {
+      "lat": 27.2000,
+      "lng": 64.0000
+    }
+  },
+  {
+    "id": 5,
+    "flightNumber": "BA142",
+    "callsign": "BAW142",
+    "aircraftType": "Airbus A350",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "lat": 51.4700,
+      "lng": -0.4543
+    },
+    "status": "Arrived",
+    "estimatedDeparture": "2026-10-05T08:30:00",
+    "estimatedArrival": "2026-10-05T15:00:00",
+    "currentPosition": {
+      "lat": 51.4700,
+      "lng": -0.4543
+    }
+  },
+  {
+    "id": 6,
+    "flightNumber": "LH760",
+    "callsign": "DLH760",
+    "aircraftType": "Airbus A350",
+    "origin": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "India",
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "destination": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "lat": 50.0379,
+      "lng": 8.5622
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T06:30:00",
+    "estimatedArrival": "2026-10-06T14:30:00",
+    "currentPosition": {
+      "lat": 35.0000,
+      "lng": 45.0000
+    }
+  },
+  {
+    "id": 7,
+    "flightNumber": "SQ406",
+    "callsign": "SIA406",
+    "aircraftType": "Boeing 777",
+    "origin": {
+      "code": "SIN",
+      "name": "Singapore Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3644,
+      "lng": 103.9915
+    },
+    "destination": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "status": "Delayed",
+    "estimatedDeparture": "2026-10-06T05:20:00",
+    "estimatedArrival": "2026-10-06T11:40:00",
+    "currentPosition": {
+      "lat": 15.5000,
+      "lng": 90.0000
+    }
+  },
+  {
+    "id": 8,
+    "flightNumber": "EY218",
+    "callsign": "ETD218",
+    "aircraftType": "Boeing 787",
+    "origin": {
+      "code": "AUH",
+      "name": "Abu Dhabi International Airport",
+      "city": "Abu Dhabi",
+      "country": "UAE",
+      "lat": 24.4330,
+      "lng": 54.6511
+    },
+    "destination": {
+      "code": "HYD",
+      "name": "Rajiv Gandhi International Airport",
+      "city": "Hyderabad",
+      "country": "India",
+      "lat": 17.2403,
+      "lng": 78.4294
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T08:00:00",
+    "estimatedArrival": "2026-10-06T13:10:00",
+    "currentPosition": {
+      "lat": 21.0000,
+      "lng": 66.0000
+    }
+  },
+  {
+    "id": 9,
+    "flightNumber": "UK955",
+    "callsign": "VTI955",
+    "aircraftType": "Airbus A321",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "India",
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "status": "Scheduled",
+    "estimatedDeparture": "2026-10-06T16:00:00",
+    "estimatedArrival": "2026-10-06T18:10:00",
+    "currentPosition": {
+      "lat": 28.5562,
+      "lng": 77.1000
+    }
+  },
+  {
+    "id": 10,
+    "flightNumber": "VS301",
+    "callsign": "VIR301",
+    "aircraftType": "Airbus A330",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "lat": 51.4700,
+      "lng": -0.4543
+    },
+    "status": "Arrived",
+    "estimatedDeparture": "2026-10-05T09:00:00",
+    "estimatedArrival": "2026-10-05T16:00:00",
+    "currentPosition": {
+      "lat": 51.4700,
+      "lng": -0.4543
+    }
+  },
+  {
+    "id": 11,
+    "flightNumber": "AF225",
+    "callsign": "AFR225",
+    "aircraftType": "Boeing 777",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France",
+      "lat": 49.0097,
+      "lng": 2.5479
+    },
+    "status": "Delayed",
+    "estimatedDeparture": "2026-10-06T09:45:00",
+    "estimatedArrival": "2026-10-06T17:20:00",
+    "currentPosition": {
+      "lat": 38.0000,
+      "lng": 35.0000
+    }
+  },
+  {
+    "id": 12,
+    "flightNumber": "QF9",
+    "callsign": "QFA9",
+    "aircraftType": "Boeing 787",
+    "origin": {
+      "code": "PER",
+      "name": "Perth Airport",
+      "city": "Perth",
+      "country": "Australia",
+      "lat": -31.9403,
+      "lng": 115.9672
+    },
+    "destination": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "lat": 51.4700,
+      "lng": -0.4543
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T03:30:00",
+    "estimatedArrival": "2026-10-06T18:30:00",
+    "currentPosition": {
+      "lat": 25.0000,
+      "lng": 75.0000
+    }
+  },
+  {
+    "id": 13,
+    "flightNumber": "TK717",
+    "callsign": "THY717",
+    "aircraftType": "Airbus A330",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "lat": 41.2753,
+      "lng": 28.7519
+    },
+    "status": "Arrived",
+    "estimatedDeparture": "2026-10-05T10:00:00",
+    "estimatedArrival": "2026-10-05T15:30:00",
+    "currentPosition": {
+      "lat": 41.2753,
+      "lng": 28.7519
+    }
+  },
+  {
+    "id": 14,
+    "flightNumber": "EK531",
+    "callsign": "UAE531",
+    "aircraftType": "Airbus A380",
+    "origin": {
+      "code": "COK",
+      "name": "Cochin International Airport",
+      "city": "Kochi",
+      "country": "India",
+      "lat": 10.1520,
+      "lng": 76.4019
+    },
+    "destination": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE",
+      "lat": 25.2532,
+      "lng": 55.3657
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T09:30:00",
+    "estimatedArrival": "2026-10-06T12:00:00",
+    "currentPosition": {
+      "lat": 17.5000,
+      "lng": 67.0000
+    }
+  },
+  {
+    "id": 15,
+    "flightNumber": "QR578",
+    "callsign": "QTR578",
+    "aircraftType": "Boeing 787",
+    "origin": {
+      "code": "DOH",
+      "name": "Hamad International Airport",
+      "city": "Doha",
+      "country": "Qatar",
+      "lat": 25.2731,
+      "lng": 51.6081
+    },
+    "destination": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "status": "Scheduled",
+    "estimatedDeparture": "2026-10-06T18:00:00",
+    "estimatedArrival": "2026-10-06T22:30:00",
+    "currentPosition": {
+      "lat": 25.2731,
+      "lng": 51.6081
+    }
+  },
+  {
+    "id": 16,
+    "flightNumber": "AI127",
+    "callsign": "AIC127",
+    "aircraftType": "Boeing 777",
+    "origin": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "India",
+      "lat": 19.0896,
+      "lng": 72.8656
+    },
+    "destination": {
+      "code": "JFK",
+      "name": "John F. Kennedy International Airport",
+      "city": "New York",
+      "country": "USA",
+      "lat": 40.6413,
+      "lng": -73.7781
+    },
+    "status": "Delayed",
+    "estimatedDeparture": "2026-10-06T07:15:00",
+    "estimatedArrival": "2026-10-06T20:30:00",
+    "currentPosition": {
+      "lat": 35.0000,
+      "lng": -20.0000
+    }
+  },
+  {
+    "id": 17,
+    "flightNumber": "6E621",
+    "callsign": "IGO621",
+    "aircraftType": "Airbus A320",
+    "origin": {
+      "code": "BLR",
+      "name": "Kempegowda International Airport",
+      "city": "Bengaluru",
+      "country": "India",
+      "lat": 13.1986,
+      "lng": 77.7066
+    },
+    "destination": {
+      "code": "SIN",
+      "name": "Singapore Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3644,
+      "lng": 103.9915
+    },
+    "status": "Active",
+    "estimatedDeparture": "2026-10-06T10:00:00",
+    "estimatedArrival": "2026-10-06T16:30:00",
+    "currentPosition": {
+      "lat": 8.5000,
+      "lng": 91.0000
+    }
+  },
+  {
+    "id": 18,
+    "flightNumber": "BA256",
+    "callsign": "BAW256",
+    "aircraftType": "Airbus A350",
+    "origin": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "lat": 51.4700,
+      "lng": -0.4543
+    },
+    "destination": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "status": "Arrived",
+    "estimatedDeparture": "2026-10-05T08:00:00",
+    "estimatedArrival": "2026-10-05T18:00:00",
+    "currentPosition": {
+      "lat": 28.5562,
+      "lng": 77.1000
+    }
+  },
+  {
+    "id": 19,
+    "flightNumber": "LH725",
+    "callsign": "DLH725",
+    "aircraftType": "Airbus A340",
+    "origin": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "lat": 50.0379,
+      "lng": 8.5622
+    },
+    "destination": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "status": "Scheduled",
+    "estimatedDeparture": "2026-10-06T19:00:00",
+    "estimatedArrival": "2026-10-07T04:30:00",
+    "currentPosition": {
+      "lat": 50.0379,
+      "lng": 8.5622
+    }
+  },
+  {
+    "id": 20,
+    "flightNumber": "SQ423",
+    "callsign": "SIA423",
+    "aircraftType": "Boeing 787",
+    "origin": {
+      "code": "DEL",
+      "name": "Indira Gandhi International Airport",
+      "city": "Delhi",
+      "country": "India",
+      "lat": 28.5562,
+      "lng": 77.1000
+    },
+    "destination": {
+      "code": "SIN",
+      "name": "Singapore Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3644,
+      "lng": 103.9915
+    },
+    "status": "Arrived",
+    "estimatedDeparture": "2026-10-05T06:00:00",
+    "estimatedArrival": "2026-10-05T13:00:00",
+    "currentPosition": {
+      "lat": 1.3644,
+      "lng": 103.9915
+    }
+  }
+]
